@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Тестовая карточка товара «Ананасовый улун»: выбор фасовки, цены и описание.">
+    <title>Ананасовый улун · Чайный Бум</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#product">К товару</a>
+
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a class="brand" href="https://teaboom.ru/" aria-label="Чайный Бум, сайт магазина">
+          <img class="brand__image" src="assets/logo.png" width="95" height="95" alt="">
+          <span class="brand__text">
+            <span class="brand__name">Чайный Бум</span>
+            <span class="brand__caption">Интернет-магазин чая и посуды</span>
+          </span>
+        </a>
+        <a class="site-header__catalog" href="https://teaboom.ru/category-root">Каталог чая</a>
+      </div>
+    </header>
+
+    <main class="container page">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ol>
+          <li><a href="https://teaboom.ru/category-root">Каталог</a></li>
+          <li><a href="https://teaboom.ru/category-ulun">Улун</a></li>
+          <li><span aria-current="page">Ананасовый улун</span></li>
+        </ol>
+      </nav>
+
+      <article class="product" id="product" aria-labelledby="product-title">
+        <header class="product__heading">
+          <a class="product__category" href="https://teaboom.ru/category-aromatizirovannyj-ulun">Ароматизированный улун</a>
+          <h1 id="product-title">Ананасовый улун</h1>
+        </header>
+
+        <figure class="product__photo">
+          <img src="assets/pineapple-oolong.jpg" width="970" height="970"
+            alt="Крупные скрученные листья ананасового улуна с кусочками цукатов"
+            fetchpriority="high">
+        </figure>
+
+        <form class="product__purchase" id="purchase-form">
+          <fieldset class="packaging" id="packaging" disabled>
+            <legend>Выберите фасовку</legend>
+            <div class="packaging__options">
+              <label class="packaging__option">
+                <input type="radio" name="weight" value="100" checked>
+                <span>100 г</span>
+              </label>
+              <label class="packaging__option">
+                <input type="radio" name="weight" value="500">
+                <span>500 г</span>
+              </label>
+              <label class="packaging__option">
+                <input type="radio" name="weight" value="1000">
+                <span>1000 г</span>
+              </label>
+              <label class="packaging__option">
+                <input type="radio" name="weight" value="5000">
+                <span>5000 г</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <p class="product__sku">Артикул: <span id="sku">01306</span></p>
+          <div class="price" aria-live="polite" aria-atomic="true">
+            <p class="price__previous">
+              <span class="visually-hidden">Цена без скидки:</span>
+              <del id="old-price">349,20 ₽</del>
+            </p>
+            <p class="price__current">
+              <span class="visually-hidden">Цена выбранной фасовки:</span>
+              <output id="price" for="packaging">326,40 ₽</output>
+            </p>
+          </div>
+          <button class="cart-button" id="cart-button" type="submit" disabled>
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M3 4h2l2.3 11h11.4l2-8H6M9 20h.01M18 20h.01"/>
+            </svg>
+            В корзину
+          </button>
+          <p class="purchase-feedback" id="purchase-feedback" role="status"></p>
+          <noscript><p class="noscript-note">Показана фасовка 100 г. Включите JavaScript для выбора других фасовок.</p></noscript>
+        </form>
+
+        <section class="product__description" aria-labelledby="description-title">
+          <h2 id="description-title">О чае</h2>
+          <p>Светлый фуцзяньский улун с ароматом спелого ананаса. Крупные скрученные листья постепенно раскрываются при заваривании. Настой светло-янтарный, с мягким чайным вкусом и фруктовой нотой.</p>
+          <p class="product__ingredients"><strong>Состав:</strong> китайский бирюзовый чай, цукаты, натуральные ароматические масла.</p>
+        </section>
+      </article>
+    </main>
+
+    <footer class="page-footer container">
+      <p>Тестовая карточка товара. Оформление заказа не подключено.</p>
+      <a href="https://teaboom.ru/product/ananasovij-ulun">Товар на Teaboom.ru</a>
+    </footer>
+  </body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Тестовая карточка товара «Ананасовый улун»: выбор фасовки, цены и описание.">
+    <meta name="description" content="Ананасовый улун: светлый чай с фруктовым ароматом. Фасовки от 100 г до 5 кг, состав и цены.">
     <title>Ананасовый улун · Чайный Бум</title>
     <link rel="icon" href="assets/logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
@@ -21,9 +21,35 @@
             <span class="brand__caption">Интернет-магазин чая и посуды</span>
           </span>
         </a>
-        <a class="site-header__catalog" href="https://teaboom.ru/category-root">Каталог чая</a>
+        <div class="header-contacts">
+          <a href="tel:+74951201551">+7 (495) 120-15-51</a>
+          <a href="mailto:info@teaboom.ru">info@teaboom.ru</a>
+        </div>
       </div>
     </header>
+
+    <div class="navigation">
+      <div class="container navigation__inner">
+        <nav class="site-nav" aria-label="Основное меню">
+          <a href="https://teaboom.ru/">Главная</a>
+          <a href="https://teaboom.ru/category-root">Каталог</a>
+          <a href="https://teaboom.ru/category-podarki">Подарки</a>
+          <a href="https://teaboom.ru/pricelist">Прайслист</a>
+          <a href="https://teaboom.ru/shop_reviews/">Отзывы</a>
+          <a href="https://teaboom.ru/contact">Контакты</a>
+        </nav>
+        <form class="search" action="https://teaboom.ru/search" method="get" role="search">
+          <label class="visually-hidden" for="search-query">Поиск по каталогу</label>
+          <input id="search-query" name="q" type="search" placeholder="Название товара" required>
+          <button type="submit" aria-label="Найти">
+            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <circle cx="10.5" cy="10.5" r="6.5"/>
+              <path d="m16 16 5 5"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
 
     <main class="container page">
       <nav class="breadcrumbs" aria-label="Хлебные крошки">
@@ -34,6 +60,7 @@
         </ol>
       </nav>
 
+      <div class="catalog-layout">
       <article class="product" id="product" aria-labelledby="product-title">
         <header class="product__heading">
           <a class="product__category" href="https://teaboom.ru/category-aromatizirovannyj-ulun">Ароматизированный улун</a>
@@ -96,11 +123,37 @@
           <p class="product__ingredients"><strong>Состав:</strong> китайский бирюзовый чай, цукаты, натуральные ароматические масла.</p>
         </section>
       </article>
+
+      <aside class="sidebar" aria-label="Каталог магазина">
+        <details class="categories" open>
+          <summary>Категории</summary>
+          <nav aria-label="Категории товаров">
+            <ul>
+              <li><a href="https://teaboom.ru/category-podarki">Подарки</a></li>
+              <li><a href="https://teaboom.ru/category-matcha">Матча</a></li>
+              <li><a href="https://teaboom.ru/category-chernyy_tea">Чёрный чай</a></li>
+              <li><a href="https://teaboom.ru/category-chaj-zelyonyj-s-chernym-aromatizirovannyj">Чай зелёный с чёрным ароматизированный</a></li>
+              <li><a href="https://teaboom.ru/category-zelenyj-chaj">Зелёный чай</a></li>
+              <li><a href="https://teaboom.ru/category-krasnyj-chaj">Красный чай</a></li>
+              <li><a href="https://teaboom.ru/category-belyj-chaj">Белый чай</a></li>
+              <li><a href="https://teaboom.ru/category-zheltyj-chaj">Жёлтый чай</a></li>
+              <li><a class="categories__current" href="https://teaboom.ru/category-ulun">Улун</a></li>
+              <li><a href="https://teaboom.ru/category-puer">Пуэр</a></li>
+            </ul>
+            <a class="categories__all" href="https://teaboom.ru/category-root">Все категории</a>
+          </nav>
+        </details>
+      </aside>
+      </div>
     </main>
 
     <footer class="page-footer container">
-      <p>Тестовая карточка товара. Оформление заказа не подключено.</p>
-      <a href="https://teaboom.ru/product/ananasovij-ulun">Товар на Teaboom.ru</a>
+      <p>Чайный Бум</p>
+      <nav aria-label="Информация магазина">
+        <a href="https://teaboom.ru/shipping/">Доставка</a>
+        <a href="https://teaboom.ru/payment/">Оплата</a>
+        <a href="https://teaboom.ru/contact">Контакты</a>
+      </nav>
     </footer>
   </body>
 </html>

@@ -43,7 +43,7 @@ packaging.addEventListener("change", updateVariant);
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const variant = selectedVariant();
-  feedback.textContent = `Выбрано: ${variant.label}, артикул ${variant.sku}, ${formatPrice(variant.price)}. Это демонстрация, заказ не оформлен.`;
+  feedback.textContent = `Выбрано: ${variant.label}, артикул ${variant.sku}, ${formatPrice(variant.price)}.`;
 });
 
 packaging.disabled = false;
